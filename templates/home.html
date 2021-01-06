@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+{% block body %}
+    <div class="jumbotron text-center">
+        <h1 class="display-5">Welcome to CRUDapp</h1>
+        <p class="lead"> by<br>SpecTEviL</p>
+        {% if session.logged_in == NULL %}
+            <a href="/register" class="btn btn-primary btn-lg">Register</a>
+            <a href="/login" class="btn btn-success btn-lg">Login</a>
+        {% endif %}
+        <!-- <hr class="my-2"> -->
+        <!-- <p>More info</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Jumbo action name</a>
+        </p> -->
+    </div>
+{% endblock %}

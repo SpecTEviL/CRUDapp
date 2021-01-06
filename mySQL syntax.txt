@@ -1,0 +1,25 @@
+1) mysql -u root -p  => start mysql monitor
+
+2) SHOW DATABASES; => to show all the data bases present
+
+3) CREATE DATABASE myflaskapp; => create a DATABASE
+
+4) USE myflaskapp; => setting the current database inorder to query furthur
+
+5) CREATE TABLE users ( id INT(11) AUTO_INCREMENT PRIMARY KEY,
+                        name VARCHAR(100), email VARCHAR(100),
+                        username VARCHAR(30),
+                        password VARCHAR(100),
+                        registerdate TIMESTAMP DEFAULT CURRENT_TIMESTAMP);   => create table
+
+6) SHOW TABLES; => shows the tables available
+
+7) DESCRIBE USERS; => shows all the data in the users table
+
+8) QUERY * FROM users;
+
+9) CREATE TABLE articles (  id INT(11) AUTO_INCREMENT PRIMARY KEY,
+                            title VARCHAR(250),
+                            author VARCHAR(100),
+                            body TEXT,
+                            createdate TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
